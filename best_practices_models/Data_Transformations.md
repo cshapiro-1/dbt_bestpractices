@@ -1,5 +1,7 @@
 ## Data Transformations:
+
 The data in any project has three distinct checkpoints:
+
 1. Sources: Schemas and tables in a source-conformed structure. This means that tables and columns are in a structure based on what the API or source returns. Frequently loaded with a third-party tool. These need to be identified in the sources.yml file in the model’s directory.
     - Snapshot Models: If a third-party tool like FiveTran or Stitch is not being used and the client is interested in retaining history of the data beyond a static representation of the source, it is recommended that you create a snapshot layer that exists before the staging models. This would use the ‘snapshot’ materialization and it auto-creates a table that uses Type 2 SCD logic to retain row history. This would then be used as the “source” by the staging models. At its simplest form, we use this for mutable data, as opposed to immutable data.
 2. Staging Models: this is the atomic unit of data modeling. Each model bears a one-to-one relationship with the source data table it represents. This means that it has the same granularity (no aggregations have been performed), but the columns may have been renamed, recast, or reconsidered into a consistent and useful format. 
