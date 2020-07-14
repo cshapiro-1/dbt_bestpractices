@@ -4,4 +4,6 @@ Instead, this section will cover how to organize the dbt project itself. What ki
 
 These guidelines are influenced by the assumption that the client is using a data warehouse that is optimized for analytical queries, as well as the possibility that multiple data sources are being loaded by third party tools and not internally developed solutions. For situations where data is being loaded manually or by a homegrown tool that doesn’t neatly account for CDC, see the “snapshot layer” section.
 
+The correct
+
 *Needs updates*: Warehouse_Models
