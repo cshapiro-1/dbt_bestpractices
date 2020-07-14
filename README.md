@@ -1,4 +1,4 @@
-## Project Structure:
+## Repo Structure:
 
 This repo will serve as a centralized location for A8's best practices for dbt_.
 
