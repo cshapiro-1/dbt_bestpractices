@@ -8,15 +8,10 @@ Instead, this section will cover how to organize the dbt project itself. What ki
 
 These guidelines are influenced by the assumption that the client is using a data warehouse that is optimized for analytical queries, as well as the possibility that multiple data sources are being loaded by third party tools and not internally developed solutions. For situations where data is being loaded manually or by a homegrown tool that doesn’t neatly account for CDC, see the “snapshot layer” section. 
 
-Data Transformations:
-The data in any project has three distinct checkpoints:
-1. **Sources**: Schemas and tables in a source-conformed structure. This means that tables and columns are in a structure based on what the API or source returns. Frequently loaded with a third-party tool. These need to be identified in the sources.yml file in the model’s directory.
-    - **Snapshot Models**: If a third-party tool like FiveTran or Stitch is not being used and the client is interested in retaining history of the data beyond a static representation of the source, it is recommended that you create a snapshot layer that exists before the staging models. This would use the ‘snapshot’ materialization and it auto-creates a table that uses Type 2 SCD logic to retain row history. This would then be used as the “source” by the staging models. At its simplest form, we use this for mutable data, as opposed to immutable data.
-2.	**Staging Models**: this is the atomic unit of data modeling. Each model bears a one-to-one relationship with the source data table it represents. This means that it has the same granularity (no aggregations have been performed), but the columns may have been renamed, recast, or reconsidered into a consistent and useful format. 
-3.	**(Optional) Warehouse Models**: Warehouse models can be used if the modelers want to create a warehouse layer where the data is stored in a Kimball or Data Vault style. The reasoning for this revolves around access and the flexibility of marts – if all the data is stored in a consistent and standard warehouse layer, it is easier to make changes to the mart models. They won’t be as dependent on atomic staging models and will instead rely on standardized warehouse models.
-4.	**Mart Models**: Mart models are models that represent business processes and entities. They’ve abstracted the data from the sources that they are based on.
-    - It is important to note the difference between the staging and mart checkpoints. Sources, snapshot, and staging are all source-centric models, whereas mart models are business-centric.
+There are folders within this repo that cover certain areas. They are as follows:
 
-You may be wondering – why aren’t we performing all of our business logic in the staging models like we do in our ETL training? It’s a good question. First, we do this to take advantage of one of the key features of dbt, reducing complexity. Being able to establish relationships between models using jinja allows us to decrease the complexity contained within a single model, which increases the understandability of our solution. Second, it allows us to further ensure data validity. We can perform tests on our staging models to ensure that the data aligns with what we expect to see, especially before we aggregate it for analysis. 
+ - [Best Practices](best_practices): This will be the central hub for all best practices recommended by A8 in any dbt_ engagement. 
+    - Project Structure
+    - Model Design
 
-To see further clarification, please see the folder 'Documentation' and the text files within each one.
+ - [Training](training): This folder serves as the repository for all information on the internal A8 dbt_ training. It will include required tools, steps for training, when to check in with an instructor, and any other information related to training with dbt_.
