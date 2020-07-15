@@ -10,7 +10,7 @@
 1. [Read the Required Reading](Required_Reading.md)
     - Pay special attention to the getting started section. This will be a great walkthrough.
     
-2. Confirm your access to the Snowflake DB 'AdventureWorks_DB'
+2. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
 
 3. Confirm your access to the Snowflake DB 'AdventureWorks_DB'
 
