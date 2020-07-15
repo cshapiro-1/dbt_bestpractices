@@ -23,7 +23,7 @@ Following the example of the SSIS training, we will provide access to a repo tha
     
 2. Read over the [AdventureWorks and DataVault 2.0 - How To Model Your Chosen Schema]() section of the documentation. Select a Schema that you are going to be modeling.
 
-   **Check-In** - Have a check in with your administrator. Discuss the schema you've chosen and how you plan on modeling it using Data Vault 2.0.
+   **Check-In - Discuss the schema you've chosen and how you plan on modeling it using Data Vault 2.0.**
 
 3. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
 
