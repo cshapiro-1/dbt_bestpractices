@@ -17,5 +17,5 @@ There are folders within this repo that cover certain areas. They are as follows
 If you have any questions, comments, or things that you would like to update regarding any of the main sections in the repo, please feel free to open up an issue and tag the relevant individual 
 
 
-*Repo Moderators*
+**Repo Moderators**
 Callum McCann
