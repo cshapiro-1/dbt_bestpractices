@@ -21,11 +21,15 @@ Following the example of the SSIS training, we will provide access to a repo tha
 1. [Read the Required Reading](Required_Reading.md)
     - Pay special attention to the getting started section. This will be a great introduction to what the steps are. Do not follow along, however, as our training will use a different data set than the jaffle_shop dataset that Claire will be walking through.
     
-2. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
+2. Read over the [AdventureWorks and DataVault 2.0 - How To Model Your Chosen Schema]() section of the documentation. Select a Schema that you are going to be modeling.
 
-*3. Confirm your access to the Snowflake DB 'AdventureWorks_DB'*
+  **Check-In** - Have a check in with your administrator. Discuss the schema you've chosen and how you plan on modeling it using Data Vault 2.0.
 
-4. In your dbt_cloud account, create a new project called 'testing_dbt'. When asked about a repo, connect to the blank repo identified in the required tools. This will activate the project and allow you to access the development IDE. Once you are in the development IDE, select 'Initialize Project', which will add the neccesary dbt_ files to your repo.
+3. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
+
+*4. Confirm your access to the Snowflake DB 'AdventureWorks_DB'*
+
+5. In your dbt_cloud account, create a new project called 'testing_dbt'. When asked about a repo, connect to the blank repo identified in the required tools. This will activate the project and allow you to access the development IDE. Once you are in the development IDE, select 'Initialize Project', which will add the neccesary dbt_ files to your repo.
 
 # Optional Steps
 1. Read the optional [recommended documentation](Optional_Reading.md)
