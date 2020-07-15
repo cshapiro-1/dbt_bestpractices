@@ -8,7 +8,7 @@
 
 # Steps for A8 dbt_ Training:
 1. [Read the Required Reading](Required_Reading.md)
-    - Pay special attention to the getting started section. This will be a great walkthrough.
+    - Pay special attention to the getting started section. This will be a great introduction to what the steps are. Do not follow along, however, as our training will use a different data set than the jaffle_shop that Claire will be walking through.
     
 2. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
 
