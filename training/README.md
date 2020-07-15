@@ -3,7 +3,7 @@ This is a training intended on getting A8 consultants up to speed on using dbt_ 
 
 The second difference is that dbt_ is a completely different way of handling data transformation. One of the core underlying assumptions is that each run is **idempotent**, which means that the same transformations and results will always result no matter when the run is occuring. This is possible because of our raw layer where all data, and historical data, is stored - it means that we don't need to worry about update logic in our later models. Any new run will recreate the database objects with the updated underlying data. If we're looking to exclude inactive rows then we just build that logic into our model.
 
-Following the example of the SSIS training, we will provide access to a repo that follows these same principles but with a different dataset (Sakila). [This example can be found here](https://github.com/cmccann020/dbt_sakila_datavault)
+Following the example of the SSIS training, we will provide access to a repo that follows these same principles but with a different dataset (Sakila). [This example can be found here](https://github.com/cmccann020/dbt_sakila_datavault).
 
 As you begin going through this training, please feel free to raise any issues that you have within the issues section of the Repo. 
 
@@ -20,7 +20,7 @@ As you begin going through this training, please feel free to raise any issues t
     
 2. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_Snowflake.md) instructions.
 
-3. Confirm your access to the Snowflake DB 'AdventureWorks_DB'
+*3. Confirm your access to the Snowflake DB 'AdventureWorks_DB'*
 
 4. In your dbt_cloud account, create a new project called 'testing_dbt'. When asked about a repo, connect to the blank repo identified in the required tools. This will activate the project and allow you to access the development IDE. Once you are in the development IDE, select 'Initialize Project', which will add the neccesary dbt_ files to your repo.
 
