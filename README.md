@@ -12,6 +12,8 @@ There are folders within this repo that cover certain areas. They are as follows
 
  - [Macros](macros): This folder serves as the home to all macros that have been developed by A8 or posted in the community that we believe could be useful in projects. This does not include any macros found in the open source project dbtvault or the fishtown analytics repo dbt_utils.
 
+ - [Data Vault](data_vault): This folder will contain information on Data Vault 2.0 modeling principles and how to use them with dbt.
+ 
 # Issues, Comments, Updates
 
 If you have any questions, comments, or things that you would like to update regarding any of the main sections in the repo, please feel free to open up an issue and tag the relevant individual 
