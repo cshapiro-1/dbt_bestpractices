@@ -1,5 +1,11 @@
 ## What is this training?
-This is a training intended on getting A8 consultants up to speed on using dbt_ on any potential client engagements. We will use the AdventureWorks training data set that is also used in the SSIS training but will model it in a different way, for a few reasons. First, we will use a version of the Data Vault 2.0 as the modeling choice for our warehouse layer.
+This is a training intended on getting A8 consultants up to speed on using dbt_ on any potential client engagements. We will use the AdventureWorks training data set that is also used in the SSIS training but will model it in a different way, for a few reasons. First, we will use a version of the Data Vault 2.0 as the modeling choice for our warehouse layer. This gives us the most flexibility for maintaining a scalable warehouse layer. 
+
+The second difference is that dbt_ is a completely different way of handling data transformation. One of the core underlying assumptions is that each run is **idempotent**, which means that the same transformations and results will always result no matter when the run is occuring. This is possible because of our raw layer where all data, and historical data, is stored - it means that we don't need to worry about update logic in our later models. Any new run will recreate the database objects with the updated underlying data. If we're looking to exclude inactive rows then we just build that logic into our model.
+
+Following the example of the SSIS training, we will provide access to a repo that follows these same principles but with a different dataset (Sakila). [This example can be found here](https://github.com/cmccann020/dbt_sakila_datavault)
+
+As you begin going through this training, please feel free to raise any issues that you have within the issues section of the Repo. 
 
 # Required Tools 
  - dbt_cloud (either 14 day free trial or free developer membership)
