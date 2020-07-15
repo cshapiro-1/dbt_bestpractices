@@ -1,3 +1,11 @@
+## Schemas In Snowflake
+
+ - HumanResources
+ - Person
+ - Purchasing
+
+## Mutability
+
 | Table | Type |
 |  ---  |  ---  |
 | [HumanResources].[Department] | mutable |
