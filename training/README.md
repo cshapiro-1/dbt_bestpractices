@@ -28,6 +28,12 @@ Following the example of the SSIS training, we will provide access to a repo tha
 3. Connect your dbt Cloud to Snowflake. Follow the [Connecting To Snowflake](Connecting_To_SnowFlake.md) instructions.
 
 4. In your dbt_cloud account, create a new project called 'testing_dbt'. When asked about a repo, connect to the blank repo identified in the required tools. This will activate the project and allow you to access the development IDE. Once you are in the development IDE, select 'Initialize Project', which will add the neccesary dbt_ files to your repo.
+   - The default name for your first dbt_ project is Analytics. If you've created your project and Analytics is the name of the project, this is fine. 
+
+5. Go into the dbt_ Cloud Environments section and click into the Development Environment. Make sure that your dbt_ version is v0.17.0. 
+
+6. Go into the Develop section of dbt_ Cloud and intiailize your project. This will populate your blank repo with all of the neccesary dbt_ files.
+   - **Note**: Go into your dbt_project.yml file and change the value config-version: 2 to config-version: 1. dbt_ v0.17 changed certain aspects of yml files that introduced a few bugs. This has been removed in later versions but can be just as easily solved by changing the config version. This is neccesary for the use of the dbtdatavault packages.
 
 # Optional Steps
 1. Read the optional [recommended documentation](Optional_Reading.md)
