@@ -18,10 +18,8 @@ Following the example of the SSIS training, we will provide access to a repo tha
     - Access to A8 Snowflake. If unavailable, contact Kevin Rogers.
 
 # Steps for A8 dbt_ Training:
-1. Read the Required Reading. This will include reading about dbt_ and Data Vault.
-    - Read all of the [dbt_ Required Reading](Required_Reading.md).
-      - Pay special attention to the getting started section. This will be a great introduction to what the steps are. Do not follow along, however, as our training will use a different data set than the jaffle_shop dataset that Claire will be walking through.
-    - Read all of the [Data Vault 2.0 Required Reading] (Link to follow)
+1. Read the [dbt_ Required Reading](Required_Reading.md).
+    - Pay special attention to the getting started section. This will be a great introduction to what the steps are. Do not follow along, however, as our training will use a different data set than the jaffle_shop dataset that Claire will be walking through.
     
 2. Read over the [AdventureWorks and DataVault 2.0 - How To Model Your Chosen Schema]() section of the documentation. Select a Schema that you are going to be modeling.
 
